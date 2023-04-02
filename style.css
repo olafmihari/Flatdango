@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.allMovies {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(64, 62, 69);
+    border-right: 10px solid black;
+    overflow-y: auto;
+}
+
+.singlePoster {
+    margin-top: 2px;
+    width: 100%;
+    height: calc(50% - 2px);
+    border: 15px solid rgb(86, 113, 181);
+    cursor: pointer;
+}
+
+.singlePoster img {
+    height: 80%;
+    display: block;
+    margin: auto;
+    margin-left: 20px;
+}
+
+.singlePoster .tittle {
+    text-align: center;
+}
+
+.singleMovie {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(135, 76, 76);
+}
+
+
+.singleMovie img {
+    height: 53%;
+    display: block;
+    margin: auto;
+
+}
+
+.imgDetails {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    padding-top: 10px;
+}
+
+.imgDetails .description {
+    width: 60%;
+    text-align: center;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    overflow: auto;
+
+}
+
+.imgDetails div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border-left: 2px solid black;
+}
+
+.imgDetails div>h3 {
+    margin-top: 30px;
+}
+
+.tickets {
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    border-top: 5px solid black;
+    align-items: center;
+}
+
+.tickets button {
+    cursor: pointer;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.allMovies {
+    color: #e4e4e4;
+    font-style: italic;
+}
